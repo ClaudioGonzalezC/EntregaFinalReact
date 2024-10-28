@@ -3,13 +3,19 @@ import Counter from "./Counter";
 
 const CounterContainer = () => {
   const [contador, setContador] = useState(1);
+  const maxCount = 4; // Máximo permitido
+  const minCount = 0; // Mínimo permitido
 
   const sumar = () => {
-    setContador(contador + 1);
+    if (contador < maxCount) {
+      setContador(contador + 1);
+    }
   };
 
   const restar = () => {
-    setContador(contador - 1);
+    if (contador > minCount) {
+      setContador(contador - 1);
+    }
   };
 
   let childProps = {
@@ -20,4 +26,5 @@ const CounterContainer = () => {
 
   return <Counter {...childProps} />;
 };
+
 export default CounterContainer;
