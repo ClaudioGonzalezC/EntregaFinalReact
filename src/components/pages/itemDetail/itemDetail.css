@@ -1,0 +1,50 @@
+.item-detail-container {
+    max-width: 1460px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .item-detail-image img {
+    width: 100%; /* Imagen ocupa el 100% del ancho */
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .item-detail-info {
+    display: flex;
+    justify-content: space-between; /* Asegura que ambos contenedores ocupen 50% */
+    gap: 90px;
+    align-items: baseline;
+  }
+  
+  .item-detail-left,
+  .item-detail-right {
+    flex: 1; /* Ambos contenedores ocupan 50% del espacio */
+  }
+  
+  .item-detail-left h1 {
+    margin-bottom: 10px;
+  }
+  
+  .item-detail-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineación del precio y contador */
+  }
+  
+  .item-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }  
+.counter-container div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    text-align: center;
+}

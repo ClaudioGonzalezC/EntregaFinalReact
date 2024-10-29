@@ -1,33 +1,32 @@
 import { useState, useEffect } from "react";
-import { products } from "../../../productsMock";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import { db } from "../../../firebaseConfig";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
-  const [items, setItems] = useState([]); 
-
-  const { categoryName } = useParams(); 
+  const [items, setItems] = useState([]);
+  const { categoryName } = useParams();
 
   useEffect(() => {
-    const filteredProducts = products.filter(
-      (product) => product.category === categoryName
-    );
-    const getProducts = new Promise((res, rej) => {
-      let isLogued = true;
-      if (isLogued) {
-        res(categoryName ? filteredProducts : products);
-      } else {
-        rej({ message: "algo salio mal" });
-      }
-    });
+    const productosCollection = collection(db, "viajes");
+    let consulta = productosCollection;
 
-    getProducts
-      .then((response) => {
-        setItems(response);
+    // Si hay un categoryName, aplicamos un filtro usando where
+    if (categoryName) {
+      consulta = query(productosCollection, where("category", "==", categoryName));
+    }
+
+    // Vaciamos items al inicio de cada consulta para evitar duplicados
+    setItems([]);
+
+    // Ejecutamos la consulta
+    getDocs(consulta)
+      .then((res) => {
+        const productos = res.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+        setItems(productos); // Guarda los datos en el estado
       })
-      .catch((error) => {
-        console.log("entro en el catch ", error);
-      });
+      .catch((error) => console.error("Error al obtener productos:", error));
   }, [categoryName]);
 
   return <ItemList items={items} />;

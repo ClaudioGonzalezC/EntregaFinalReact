@@ -9,6 +9,7 @@ export const products = [
     imageUrl:
       "https://claudiogonzalezc.github.io/Plani-GonzalezCornejo/assets/images/ofertas-paris.webp",
     category: "europa",
+    detail: "París, la ciudad del amor y las luces, es famosa por su arquitectura icónica, como la Torre Eiffel y la Catedral de Notre Dame. Disfruta de sus museos de renombre mundial, como el Louvre, su exquisita gastronomía y su vibrante vida cultural. Perfecto para los amantes del arte, la historia y la buena comida.",
   },
   {
     id: "2",
@@ -17,9 +18,10 @@ export const products = [
     price: "$" + 25000,
     description: "Ida y Vuelta",
     date: "23 Abr - 20 Abr",
-    category: "america",
     imageUrl:
       "https://claudiogonzalezc.github.io/Plani-GonzalezCornejo/assets/images/ofertas-nuevayork.webp",
+    category: "america",
+    detail: "La ciudad que nunca duerme, Nueva York ofrece algo para todos. Desde las luces de Times Square hasta el impresionante Central Park, la ciudad es un centro de arte, cultura, moda y gastronomía. Descubre Broadway, los museos de clase mundial y su icónico horizonte.",
   },
   {
     id: "3",
@@ -31,6 +33,7 @@ export const products = [
     category: "asia",
     imageUrl:
       "https://claudiogonzalezc.github.io/Plani-GonzalezCornejo/assets/images/ofertas-osaka.webp",
+    detail: "Osaka, una ciudad vibrante y llena de energía, es famosa por su hospitalidad, su vibrante vida nocturna y su deliciosa gastronomía callejera, como el takoyaki y el okonomiyaki. Además de su castillo histórico, la ciudad ofrece una mezcla perfecta entre modernidad y tradición.",
   },
   {
     id: "4",
@@ -42,6 +45,7 @@ export const products = [
     category: "europa",
     imageUrl:
       "https://claudiogonzalezc.github.io/Plani-GonzalezCornejo/assets/images/ofertas-barcelona.webp",
+    detail: "Barcelona es un destino artístico y cultural, conocido por las obras maestras de Gaudí como la Sagrada Familia y el Parque Güell. Explora su vibrante vida en La Rambla, sus playas soleadas y su rica historia, todo acompañado de una gastronomía mediterránea excepcional.",
   },
   {
     id: "5",
@@ -53,6 +57,7 @@ export const products = [
     category: "asia",
     imageUrl:
       "https://claudiogonzalezc.github.io/Plani-GonzalezCornejo/assets/images/ofertas-tailandia.webp",
+    detail: "Trat, una tranquila provincia en el sudeste de Tailandia, es la puerta de entrada a las impresionantes islas de Koh Chang y Koh Kood. Con sus paisajes naturales, playas vírgenes y mercados locales, es ideal para quienes buscan escapar de las multitudes y disfrutar de la naturaleza.",
   },
   {
     id: "6",
@@ -64,8 +69,8 @@ export const products = [
     category: "europa",
     imageUrl:
       "https://claudiogonzalezc.github.io/Plani-GonzalezCornejo/assets/images/ofertas-londres.webp",
+    detail: "Londres, una de las ciudades más emblemáticas del mundo, combina historia y modernidad. Desde el icónico Big Ben y la Torre de Londres hasta sus museos y mercados, la ciudad ofrece una mezcla de cultura, arte, moda y gastronomía incomparable.",
   },
-  // Nuevos destinos
   {
     id: "7",
     title: "Roma, Italia",
@@ -76,6 +81,7 @@ export const products = [
     category: "europa",
     imageUrl:
       "https://plus.unsplash.com/premium_photo-1675975706513-9daba0ec12a8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    detail: "Roma es una ciudad llena de historia y cultura, donde cada esquina es un viaje al pasado. Maravíllate con el Coliseo, el Foro Romano y la Ciudad del Vaticano. Disfruta de la auténtica comida italiana mientras exploras sus callejuelas y monumentos históricos.",
   },
   {
     id: "8",
@@ -87,6 +93,7 @@ export const products = [
     category: "america",
     imageUrl:
       "https://plus.unsplash.com/premium_photo-1697729901052-fe8900e24993?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    detail: "La vibrante capital de Argentina, Buenos Aires, es conocida por su rica cultura del tango, su arquitectura europea y su deliciosa cocina. Pasea por los barrios bohemios de San Telmo y La Boca, y disfruta de la energía de esta ciudad que nunca deja de moverse.",  
   },
   {
     id: "9",
@@ -98,6 +105,7 @@ export const products = [
     category: "oceania",
     imageUrl:
       "https://plus.unsplash.com/premium_photo-1697730221799-f2aa87ab2c5d?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    detail: "Sídney es una ciudad vibrante conocida por su impresionante Ópera y el Puente de la Bahía. Disfruta de sus hermosas playas como Bondi, explora el puerto en ferry y pasea por sus parques nacionales cercanos. Un destino ideal para los amantes de la naturaleza y la vida urbana.",
   },
   {
     id: "10",
@@ -109,6 +117,7 @@ export const products = [
     category: "africa",
     imageUrl:
       "https://images.unsplash.com/photo-1600520611035-84157ad4084d?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      detail: "El Cairo, la puerta de entrada a las majestuosas pirámides de Giza, es una ciudad rica en historia antigua. Descubre el esplendor de las pirámides y la Esfinge, explora el Museo Egipcio lleno de tesoros y sumérgete en la vibrante vida urbana y los bazares locales.",  
   },
   {
     id: "11",
@@ -120,6 +129,7 @@ export const products = [
     category: "america",
     imageUrl:
       "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      detail: "Río de Janeiro, una ciudad llena de ritmo y color, es famosa por sus playas de Copacabana e Ipanema, el impresionante Cristo Redentor y el vibrante Carnaval. Con su mezcla de paisajes urbanos y naturales, Río es el destino perfecto para los amantes de la cultura y la diversión.",  
   },
   {
     id: "12",
@@ -131,6 +141,7 @@ export const products = [
     category: "africa",
     imageUrl:
       "https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      detail: "Ciudad del Cabo, situada al pie de la icónica Montaña de la Mesa, ofrece una experiencia única donde se mezclan la naturaleza y la vida urbana. Explora sus playas, viñedos y fauna local, y disfruta de su vibrante escena cultural en el barrio de Bo-Kaap.",  
   },
   {
     id: "13",
@@ -142,6 +153,7 @@ export const products = [
     category: "asia",
     imageUrl:
       "https://images.unsplash.com/photo-1548783307-f63adc3f200b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      detail: "Tokio, una metrópolis vibrante donde la tecnología y la tradición se encuentran. Desde rascacielos ultramodernos hasta templos tranquilos, Tokio ofrece una experiencia única. Disfruta de la cocina japonesa, visita el famoso cruce de Shibuya, y explora barrios tradicionales como Asakusa.",  
   },
   {
     id: "14",
@@ -153,6 +165,7 @@ export const products = [
     category: "oceania",
     imageUrl:
       "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      detail: "Auckland, conocida como la 'Ciudad de las Velas', es el centro cultural y económico de Nueva Zelanda. Rodeada de volcanes y playas, esta ciudad ofrece una combinación de aventuras al aire libre y una animada vida urbana, perfecta para quienes buscan lo mejor de ambos mundos.",  
   },
   {
     id: "15",
@@ -164,6 +177,7 @@ export const products = [
     category: "asia",
     imageUrl:
       "https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      detail: "Bali, la isla de los dioses, ofrece un paraíso tropical lleno de templos, playas y selvas. Perfecto para quienes buscan relajarse, practicar yoga, o disfrutar del surf. Descubre su rica cultura hindú, sus paisajes exóticos y sus vibrantes mercados.",  
   },
   {
     id: "16",
@@ -175,6 +189,7 @@ export const products = [
     category: "oceania",
     imageUrl:
       "https://images.unsplash.com/photo-1512017615494-fdf6146235ff?q=80&w=1736&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      detail: "Queenstown, la capital mundial de los deportes extremos, es un paraíso para los aventureros. Con sus paisajes alpinos impresionantes, es ideal para practicar esquí, bungee jumping, senderismo y deportes acuáticos. Un destino espectacular en cualquier estación del año.",  
   },
   {
     id: "17",
@@ -186,6 +201,7 @@ export const products = [
     category: "oceania",
     imageUrl:
       "https://images.unsplash.com/photo-1650010003431-fcd249763cc4?q=80&w=1688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      detail: "Fiyi, un conjunto de más de 300 islas en el Pacífico Sur, es un verdadero paraíso tropical. Con sus aguas cristalinas, playas de arena blanca y hospitalidad sin igual, es un destino perfecto para relajarse, bucear en arrecifes de coral y disfrutar de la cultura local.",
   },
   {
     id: "18",
@@ -197,6 +213,7 @@ export const products = [
     category: "africa",
     imageUrl:
       "https://plus.unsplash.com/premium_photo-1697729856847-ae499843242f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      detail: "Nairobi, la puerta de entrada a los safaris africanos, es una vibrante ciudad llena de contrastes. Disfruta de su vida urbana moderna mientras exploras sus parques nacionales cercanos, donde puedes avistar leones, jirafas y rinocerontes en su hábitat natural.",  
   },
   {
     id: "19",
@@ -208,6 +225,7 @@ export const products = [
     category: "africa",
     imageUrl:
       "https://images.unsplash.com/photo-1570133435536-7ececf000ef6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    detail: "Marrakech, la ciudad roja, es un destino mágico lleno de bazares, palacios y jardines exuberantes. Explora la histórica medina, visita la famosa plaza Jemaa el-Fnaa y piérdete en sus intrincados zocos llenos de artesanías y especias.",  
   },
   {
     id: "20",
@@ -219,6 +237,7 @@ export const products = [
     category: "america",
     imageUrl:
       "https://images.unsplash.com/photo-1713757545283-983545cbe11e?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      detail: "Santiago, la capital de Chile, está rodeada por los majestuosos Andes y combina modernidad con tradición. Con su vibrante vida cultural, museos, parques y cercanía a viñedos y centros de esquí, Santiago es el punto de partida perfecto para explorar la diversidad del país.",
   },
   {
     id: "21",
@@ -230,6 +249,7 @@ export const products = [
     category: "nuevo",
     imageUrl:
       "https://quo.eldiario.es/wp-content/uploads/2019/10/rescate-extremo-de-un-cientifico-en-la-base-amundsen-scott.jpg",
+      detail: "La Base Amundsen-Scott, situada en el Polo Sur, es una de las estaciones de investigación más remotas y frías del planeta. Los científicos que viven aquí desafían las condiciones extremas para estudiar el clima y la biodiversidad en el corazón de la Antártida.",
   },
   {
     id: "22",
@@ -241,6 +261,7 @@ export const products = [
     category: "nuevo",
     imageUrl:
       "https://mediaim.expedia.com/destination/1/99ab483f8a6c8cdde760150d34bac04e.jpg",
+      detail: "Longyearbyen, el asentamiento más septentrional del mundo, es una pequeña comunidad en el archipiélago de Svalbard. Aquí puedes experimentar el sol de medianoche en verano y la aurora boreal en invierno, rodeado de impresionantes paisajes árticos y fauna polar.",
   },
   {
     id: "23",
@@ -252,6 +273,7 @@ export const products = [
     category: "nuevo",
     imageUrl:
       "https://cdn.mos.cms.futurecdn.net/7ya4qrHsoArDh8nFxzB87U.jpg",
+      detail: "Área 51, el misterioso sitio de pruebas militares en el desierto de Nevada, ha capturado la imaginación del público durante décadas debido a teorías de conspiración sobre ovnis. Aunque no es accesible al público, su mística sigue atrayendo a curiosos de todo el mundo.",
   },
   {
     id: "24",
@@ -263,5 +285,6 @@ export const products = [
     category: "nuevo",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Xok1iOFtHKUCNbIPReUuJa72ykWA56SLTg&s",
+      detail: "El Triángulo de las Bermudas, un área del Océano Atlántico entre Florida, Puerto Rico y las Bermudas, es famoso por las misteriosas desapariciones de barcos y aviones a lo largo de los años. Aunque muchas teorías intentan explicarlo, el misterio sigue siendo un tema de fascinación.",
   },
 ];

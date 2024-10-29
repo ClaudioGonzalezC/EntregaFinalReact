@@ -4,6 +4,9 @@ import CartContainer from "./components/pages/cart/CartContainer";
 import Navbar from "./components/layouts/navbar/Navbar";
 import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer";
 import LocationFilter from "./components/layouts/locationFilter/LocationFilter";
+import { CartContextProvider } from "./context/CartContext";
+import { Toaster } from "sonner";
+import Checkout from "./components/pages/checkout/Checkout";
 
 function App() {
   const isDarkMode = false;
@@ -11,21 +14,28 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar />
-      <LocationFilter />
-      <Routes>
-        <Route path={"/"} element={<ItemListContainer />} />
-        <Route
-          path={"/category/:categoryName"}
-          element={<ItemListContainer />}
-        />
+      <Toaster richColors toastOptions={{duration: 2000,}} expand
+        // expand={false}
+      />
+      <CartContextProvider>
+        <Navbar />
+        <LocationFilter />
+        <Routes>
+          <Route path={"/"} element={<ItemListContainer />} />
+          <Route
+            path={"/category/:categoryName"}
+            element={<ItemListContainer />}
+          />
 
-        <Route path={"/cart"} element={<CartContainer />} />
+          <Route path={"/cart"} element={<CartContainer />} />
 
-        <Route path={"/productDetail/:id"} element={<ItemDetailContainer />} />
+          <Route path={"/productDetail/:id"} element={<ItemDetailContainer />} />
 
-        <Route path="*" element={<h2>404 not found</h2>} />
-      </Routes>
+          <Route path={"/checkout"} element={<Checkout />} />
+
+          <Route path="*" element={<h2>404 not found</h2>} />
+        </Routes>
+        </CartContextProvider>
     </BrowserRouter>
   );
 }
